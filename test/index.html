@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to New Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .subscribe-container {
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-right: 20px;
+            white-space: nowrap;
+            font-weight: normal;
+        }
+        h1 strong {
+            font-weight: bold;
+        }
+        .subscribe-form {
+            display: flex;
+            flex-grow: 1;
+        }
+        input[type="email"] {
+            flex-grow: 1;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            background-color: #1a1a1a;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 50px 50px 0;
+            white-space: nowrap;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        button:disabled {
+            background-color: #666;
+            cursor: default;
+        }
+        @media (max-width: 768px) {
+            .subscribe-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            h1 {
+                margin-right: 0;
+                margin-bottom: 20px;
+                font-size: 2.5rem;
+            }
+            .subscribe-form {
+                width: 100%;
+            }
+            input[type="email"], button {
+                border-radius: 50px;
+            }
+        }
+
+        /* Custom auto-disappearing alert box */
+        .alert {
+            display: none;
+            padding: 15px;
+            background-color: #d4e9fc;
+            color: #004085;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .alert svg {
+            margin-right: 10px;
+        }
+
+        .alert p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="subscribe-container">
+        <h1>Subscribe to <strong>new posts</strong></h1>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="email" placeholder="Your email address" required>
+            <button type="submit" id="subscribe-button">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Alert box -->
+    <div id="alert-box" class="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path d="M7.938 2.016a.13.13 0 0 1 .13 0l6.857 11.856c.045.078.07.168.07.262a.49.49 0 0 1-.5.5H.505a.49.49 0 0 1-.5-.5c0-.094.025-.184.07-.262L6.932 2.016a.13.13 0 0 1 .13 0zM8 4c-.535 0-.954.462-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 7a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+        <p>You have already subscribed!</p>
+    </div>
+
+    <script>
+        // Function to show the alert and make it disappear after 3 seconds
+        function showAlert() {
+            const alertBox = document.getElementById('alert-box');
+            alertBox.style.display = 'flex';
+
+            // Auto hide the alert after 3 seconds
+            setTimeout(function() {
+                alertBox.style.display = 'none';
+            }, 3000);
+        }
+
+        // Subscription form handling
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const button = document.getElementById('subscribe-button');
+            
+            // Check if email is already in the URL to avoid multiple parameters
+            if (window.location.href.includes('?email_address=')) {
+                showAlert();  // Show custom alert box
+                return;
+            }
+
+            const subscribeUrl = `${window.location.href}?email_address=${encodeURIComponent(email)}`;
+
+            // Change button text and disable it
+            button.textContent = 'Subscribed';
+            button.disabled = true;
+
+            // Redirect to the subscription URL with the email parameter
+            window.location.href = subscribeUrl;
+        });
+    </script>
+</body>
+</html>

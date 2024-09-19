@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Explorer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .category-button {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .category-button.active {
+      background-color: #ccc;
+    }
+
+    .song-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .song-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .song-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .song-info {
+      padding: 10px;
+    }
+
+    .song-title {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .song-artist {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .song-footer {
+      padding: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px;
+      font-size: 0.8rem;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Song Explorer</h1>
+
+    <div class="categories-section">
+      <h2 class="subtitle">Categories</h2>
+      <div class="categories">
+        <button class="category-button active" onclick="filterSongs(null)">All</button>
+      </div>
+    </div>
+
+    <div class="song-grid" id="songGrid"></div>
+  </div>
+
+  <script>
+    const songs = [
+      { id: 1, title: "Bohemian Rhapsody", artist: "Queen", categories: ["Rock", "Classic"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 2, title: "Billie Jean", artist: "Michael Jackson", categories: ["Pop", "80s"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 3, title: "Shape of You", artist: "Ed Sheeran", categories: ["Pop", "Contemporary"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 4, title: "Stairway to Heaven", artist: "Led Zeppelin", categories: ["Rock", "Classic"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 5, title: "Despacito", artist: "Luis Fonsi", categories: ["Pop", "Latin"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 6, title: "Sweet Child o' Mine", artist: "Guns N' Roses", categories: ["Rock", "80s"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 7, title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", categories: ["Pop", "Funk"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 8, title: "Hotel California", artist: "Eagles", categories: ["Rock", "Classic"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 9, title: "All About That Bass", artist: "Meghan Trainor", categories: ["Pop", "Contemporary"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+      { id: 10, title: "Smells Like Teen Spirit", artist: "Nirvana", categories: ["Rock", "90s"], coverImage: "/assets/images/square-flyer-template-maximalist-business_23-2148524497.avif" },
+    ];
+
+    const allCategories = [...new Set(songs.flatMap(song => song.categories))];
+
+    const categoryContainer = document.querySelector('.categories');
+    const songGrid = document.getElementById('songGrid');
+
+    allCategories.forEach(category => {
+      const button = document.createElement('button');
+      button.className = 'category-button';
+      button.textContent = category;
+      button.onclick = () => filterSongs(category);
+      categoryContainer.appendChild(button);
+    });
+
+    function filterSongs(category) {
+      document.querySelectorAll('.category-button').forEach(btn => btn.classList.remove('active'));
+      const activeButton = Array.from(categoryContainer.children).find(btn => btn.textContent === (category || 'All'));
+      activeButton.classList.add('active');
+
+      const filteredSongs = category ? songs.filter(song => song.categories.includes(category)) : songs;
+      renderSongs(filteredSongs);
+    }
+
+    function renderSongs(songs) {
+      songGrid.innerHTML = '';
+
+      songs.forEach(song => {
+        const songCard = document.createElement('div');
+        songCard.className = 'song-card';
+
+        const img = document.createElement('img');
+        img.src = song.coverImage;
+        img.alt = `${song.title} cover`;
+
+        const songInfo = document.createElement('div');
+        songInfo.className = 'song-info';
+
+        const title = document.createElement('div');
+        title.className = 'song-title';
+        title.textContent = song.title;
+
+        const artist = document.createElement('div');
+        artist.className = 'song-artist';
+        artist.textContent = song.artist;
+
+        const songFooter = document.createElement('div');
+        songFooter.className = 'song-footer';
+
+        song.categories.forEach(category => {
+          const badge = document.createElement('span');
+          badge.className = 'badge';
+          badge.textContent = category;
+          songFooter.appendChild(badge);
+        });
+
+        songInfo.appendChild(title);
+        songInfo.appendChild(artist);
+
+        songCard.appendChild(img);
+        songCard.appendChild(songInfo);
+        songCard.appendChild(songFooter);
+
+        songGrid.appendChild(songCard);
+      });
+    }
+
+    filterSongs(null);
+  </script>
+</body>
+</html>

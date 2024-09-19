@@ -1,0 +1,200 @@
+:root {
+    --radius-10: 10px;
+    --fs-3: 1.75rem;
+    --fs-4: 1.5rem;
+    --fs-6: 1rem;
+    --spanish-gray: #969696;
+    --portland-orange: #FF6F00;
+    --fw-700: 700;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .header.active {
+    background-color: #222;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .hero .span {
+    color: var(--portland-orange);
+  }
+  
+  .hero-text {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .collection-item {
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .collection-item .img-holder {
+    border-radius: var(--radius-10);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .collection-item .img-cover {
+    width: 100%;
+    height: auto;
+  }
+  
+  .collection-item .card-title {
+    font-size: var(--fs-3);
+    margin-bottom: 10px;
+  }
+  
+  .collection-item .card-text {
+    font-size: var(--fs-6);
+    color: var(--spanish-gray);
+    margin-bottom: 10px;
+  }
+  
+  .collection-item .card-price {
+    font-size: var(--fs-4);
+    color: var(--portland-orange);
+    font-weight: var(--fw-700);
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-top {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-text {
+    margin: 0;
+  }
+  
+  .back-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--portland-orange);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: var(--radius-10);
+  }
+  
+  .back-top-btn.active {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+    }
+  
+    .navbar.active {
+      display: flex;
+    }
+  
+    .navbar-link {
+      margin: 10px 0;
+    }
+  
+    .nav-toggle-btn {
+      display: block;
+    }
+  
+    .collection-item {
+      width: 100%;
+    }
+  }
+  
