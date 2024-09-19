@@ -56,12 +56,14 @@
             |-- author-4.jpg
             |-- author-5.jpg
             |-- author-6.jpg
+            |-- bc67734021e045949611ca47.webp
             |-- featured-1.jpg
             |-- featured-2.jpg
             |-- featured-3.jpg
             |-- featured-4.jpg
             |-- featured-5.jpg
             |-- featured-6.jpg
+            |-- HD-wallpaper-viper-green-smoke-background-valorant.jpg
             |-- logo.svg
             |-- recent-1.jpg
             |-- recent-2.jpg
@@ -75,6 +77,8 @@
             |-- recommended-4.jpg
             |-- recommended-5.jpg
             |-- recommended-6.jpg
+            |-- valo1.jpeg
+            |-- valorant-agent-26-see-release-date-role-nationality-origin-and-abilities.jpg
         |-- js
             |-- script.js
     |-- index.html
