@@ -29,6 +29,7 @@
         |-- image_processing20210907-29381-lsg0l0.gif
         |-- Journey-amico.svg
         |-- juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif
+        |-- logo.png
         |-- New Project.png
         |-- pingu-love.gif
         |-- pngtree-sound-waves-equalizer-audio-radio-signal-music-recording-vector-png-image_6678910.png
@@ -63,8 +64,13 @@
             |-- featured-4.jpg
             |-- featured-5.jpg
             |-- featured-6.jpg
+            |-- GF8VajbWAAAY6fK (1).jpeg
+            |-- GF8VajbWAAAY6fK (2).png
+            |-- GF8VajbWAAAY6fK.jpeg
             |-- HD-wallpaper-viper-green-smoke-background-valorant.jpg
+            |-- hq720.jpg
             |-- logo.svg
+            |-- maxresdefault.jpg
             |-- recent-1.jpg
             |-- recent-2.jpg
             |-- recent-3.jpg
@@ -77,13 +83,17 @@
             |-- recommended-4.jpg
             |-- recommended-5.jpg
             |-- recommended-6.jpg
+            |-- secure-vpn-a-high-speed-ultra-secure-vpn-logo.avif
             |-- valo1.jpeg
             |-- valorant-agent-26-see-release-date-role-nationality-origin-and-abilities.jpg
+            |-- vpn.png
+            |-- VPN_Glossary_2.jpeg
         |-- js
             |-- script.js
     |-- index.html
     |-- index.txt
     |-- post
+        |-- secure-vpn.html
         |-- valorant-mobile-download.html
     |-- readme-images
         |-- desktop.png
