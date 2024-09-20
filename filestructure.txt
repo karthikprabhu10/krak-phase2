@@ -51,6 +51,7 @@
         |-- css
             |-- style.css
         |-- images
+            |-- 03_qq_symbol-1-250x300.png
             |-- author-1.jpg
             |-- author-2.jpg
             |-- author-3.jpg
@@ -71,6 +72,8 @@
             |-- hq720.jpg
             |-- logo.svg
             |-- maxresdefault.jpg
+            |-- pngegg.png
+            |-- qq.jpg
             |-- recent-1.jpg
             |-- recent-2.jpg
             |-- recent-3.jpg
@@ -88,13 +91,16 @@
             |-- valorant-agent-26-see-release-date-role-nationality-origin-and-abilities.jpg
             |-- vpn.png
             |-- VPN_Glossary_2.jpeg
+            |-- WeChat-Logo-2011.png
         |-- js
             |-- script.js
     |-- index.html
     |-- index.txt
     |-- post
+        |-- qq.html
         |-- secure-vpn.html
         |-- valorant-mobile-download.html
+        |-- wechat.html
     |-- readme-images
         |-- desktop.png
     |-- README.md
