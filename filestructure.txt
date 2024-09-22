@@ -15,6 +15,7 @@
         |-- 3a.jpeg
         |-- 4.jpeg
         |-- 5.jpeg
+        |-- 63a195a8091f9b8261be0e650ab3f963d7f3d270.webp
         |-- silenthearts.jpeg
     |-- CSS
         |-- style.css
@@ -25,6 +26,7 @@
         |-- discord-outline-svgrepo-com (2).svg
         |-- discord-outline-svgrepo-com (3).svg
         |-- discord-outline-svgrepo-com.svg
+        |-- hero-banner.svg
         |-- HTML-Yeti-404-Page.gif
         |-- image_processing20210907-29381-lsg0l0.gif
         |-- Journey-amico.svg
