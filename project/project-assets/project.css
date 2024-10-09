@@ -18,18 +18,17 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            min-height: 100vh;
-            background: linear-gradient(to bottom, #EFF6FF, #FFFFFF);
-            color: var(--gray-900);
-            font-size: 16px;
-            line-height: 1.5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
         
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 1rem;
+            padding-top: 40px;
         }
         
         header {
@@ -70,6 +69,7 @@
             border-radius: 1rem;
             overflow: hidden;
             margin-bottom: 1.5rem;
+            
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         
@@ -344,3 +344,134 @@
             }
         }
     
+
+
+
+
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: white;
+padding: 15px 25px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+height: 55px;
+position: relative;
+}
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo img {
+height: 30px;
+margin-right: 10px;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+/* Button Styles */
+.btnn-signin {
+background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+padding: 7px 20px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+margin-left: 20px;
+}
+
+.btnn-signin:hover {
+background-position: right center;
+color: #fff;
+}
+
+.btnn-trial {
+background-color: rgb(255, 196, 0);
+padding: 10px 10px;
+transition: 0.5s;
+border-radius: 7px;
+font-weight: bold;
+margin-left: 10px;
+}
+
+.btnn-trial:hover {
+background-color: rgb(255, 196, 0);
+color: rgb(0, 0, 0);
+}
+
+/* Mobile Navbar Styles */
+.menu-toggle {
+display: none;
+font-size: 24px;
+cursor: pointer;
+}
+@media (max-width: 1057px) {
+.menu-toggle {
+  display: block;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px 0;
+  align-items: center; /* Center the nav links horizontally */
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 15px 0;
+  width: 100%; /* Ensure the links take full width */
+  text-align: center; /* Center align text */
+}
+
+.btnn-signin,
+.btnn-trial {
+  width: 80%; /* Make the buttons wider on mobile for better touch interaction */
+  margin: 10px auto;
+}
+}
+a{
+text-decoration: none;
+color: black;
+}
+.logo-text{
+color: black;
+font-size: 30px;
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+}

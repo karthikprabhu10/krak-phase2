@@ -6,17 +6,32 @@
     <title>SwiftUI Masterclass</title>
    <!--CSS-->
    <link rel="stylesheet" href="./project-assets/project.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>SwiftUI Masterclass</h1>
-                <button class="sign-in-btn">Sign In</button>
+
+    <nav class="navbar ibm-plex-sans-regular">
+        <div class="logo">
+            <div class="logo-bg">
+               <a href="./index.html"> <h1 class="logo-text">&lt;KRAK.CODE&gt;</h1></a>
             </div>
         </div>
-    </header>
-
+        <div class="menu-toggle" id="mobile-menu">
+            <span>&#9776;</span>
+        </div>
+        <ul class="nav-links no-blue" id="nav-links">
+            <li><a class="no-blue" href="#">Programs</a></li>
+            <li><a class="no-blue" href="/KRAK/index.html">Shop</a></li>
+            <li><a class="no-blue" href="#">Projects</a></li>
+            <li><a class="no-blue" href="./blog/index.html">Blog</a></li>
+            <li><a class="no-blue" href="https://karthikprabhu.netlify.app/">Portfolio</a></li>
+            <li><a href="#" class="btnn-signin">Sign In</a></li>
+            <li><a href="#" class="btnn-trial">Book Your Free Trial, Now <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+        </ul>
+    </nav>
     <main class="container">
         <div class="hero">
             <img src="https://dummyimage.com/1200x400/007AFF/ffffff" alt="Project Banner">
@@ -235,5 +250,6 @@
             });
         });
     </script> -->
+    <script src="./project-assets/js/script.js"></script>
 </body>
 </html>

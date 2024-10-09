@@ -343,6 +343,8 @@
 |-- music.html
 |-- project
     |-- project-assets
+        |-- js
+            |-- script.js
         |-- project-image
         |-- project.css
     |-- projectpage.html
