@@ -340,6 +340,11 @@
     |-- script.js
     |-- style-guide.md
 |-- music.html
+|-- project
+    |-- project-assets
+        |-- project-image
+        |-- project.css
+    |-- projectpage.html
 |-- spline.html
 |-- test
     |-- css2.css

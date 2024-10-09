@@ -1,0 +1,346 @@
+
+        :root {
+            --blue-500: #3B82F6;
+            --blue-600: #2563EB;
+            --green-500: #22C55E;
+            --purple-500: #A855F7;
+            --gray-50: #F9FAFB;
+            --gray-200: #E5E7EB;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-900: #111827;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #EFF6FF, #FFFFFF);
+            color: var(--gray-900);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        header {
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .sign-in-btn {
+            background: none;
+            border: none;
+            color: var(--blue-500);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        main {
+            padding: 1rem 0;
+        }
+        
+        .hero {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero img {
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+        }
+        
+        .hero-content {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+        }
+        
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tag {
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: linear-gradient(to right, var(--blue-500), var(--blue-600));
+            color: #FFFFFF;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        
+        .card-content {
+            padding: 1rem;
+        }
+        
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+        
+        .overview-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .features-list {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--gray-50);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        .feature-icon {
+            color: var(--green-500);
+            margin-right: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--blue-500);
+        }
+        
+        .quick-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background-color: #FFFFFF;
+            border: 1px solid var(--gray-200);
+            border-radius: 0.375rem;
+            text-decoration: none;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+            transition: background-color 0.3s ease;
+            font-size: 0.875rem;
+        }
+        
+        .quick-link:hover {
+            background-color: var(--gray-50);
+        }
+        
+        .toggle-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 3rem;
+            height: 1.75rem;
+        }
+        
+        .toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--gray-200);
+            transition: .4s;
+            border-radius: 1.75rem;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 1.5rem;
+            width: 1.5rem;
+            left: 0.125rem;
+            bottom: 0.125rem;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: var(--blue-500);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(1.25rem);
+        }
+        
+        footer {
+            background-color: #FFFFFF;
+            border-top: 1px solid var(--gray-200);
+            padding: 1rem 0;
+            text-align: center;
+            color: var(--gray-500);
+            font-size: 0.75rem;
+        }
+        
+        @media (min-width: 640px) {
+            .hero img {
+                height: 16rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.875rem;
+            }
+            
+            .download-btn {
+                font-size: 1.125rem;
+            }
+            
+            .card-content {
+                padding: 1.5rem;
+            }
+            
+            .overview-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem 0;
+            }
+            
+            .hero img {
+                height: 20rem;
+            }
+            
+            .card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .feature-item {
+                font-size: 1rem;
+            }
+            
+            .stat-value {
+                font-size: 1.25rem;
+            }
+            
+            .quick-link {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .hero img {
+                height: 24rem;
+            }
+            
+            .features-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    
