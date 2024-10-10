@@ -1,6 +1,7 @@
 |-- .gitattributes
 |-- 404.css
 |-- 404.html
+|-- about-us.html
 |-- ads.txt
 |-- assets
     |-- audio
@@ -33,8 +34,10 @@
         |-- Journey-amico.svg
         |-- juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif
         |-- logo.png
+        |-- me1.jpg
+        |-- me2.jpg
+        |-- me3.jpg
         |-- New Project.png
-        |-- pingu-love.gif
         |-- pngtree-sound-waves-equalizer-audio-radio-signal-music-recording-vector-png-image_6678910.png
         |-- square-flyer-template-maximalist-business_23-2148524497.avif
         |-- thumb.png
@@ -110,237 +113,6 @@
     |-- style-guide.md
 |-- creators-gallery.html
 |-- index.html
-|-- KRAK
-    |-- assets
-        |-- css
-            |-- product.css
-            |-- style.css
-        |-- images
-            |-- 1715189923028.png
-            |-- 18aug (1).jpg
-            |-- 18aug (2).jpg
-            |-- 18aug (3).jpg
-            |-- 18aug (4).jpg
-            |-- 18aug (5).jpg
-            |-- 18aug (6).jpg
-            |-- banner112 (1).png
-            |-- banner32 (1).png
-            |-- banner33.png
-            |-- cta-bg.jpg
-            |-- cta-icon.png
-            |-- footer-bg.jpg
-            |-- hero-banner.jpg
-            |-- large_qualityguaranteed.jpg
-            |-- large_qualityguaranteed.png
-            |-- offer-banner-1.jpg
-            |-- offer-banner-2.jpg
-            |-- offer-banner-3.jpg
-            |-- payment.png
-            |-- product-1.jpg
-            |-- product-1_0.jpg
-            |-- product-2.jpg
-            |-- product-2_0.jpg
-            |-- product-3.jpg
-            |-- product-3_0.jpg
-            |-- product-4.jpg
-            |-- product-4_0.jpg
-            |-- product-5.jpg
-            |-- product-5_0.jpg
-            |-- product-6.jpg
-            |-- product-6_0.jpg
-            |-- product-7.jpg
-            |-- product-7_0.jpg
-            |-- product-8.jpg
-            |-- product-8_0.jpg
-            |-- service-icon-1.png
-            |-- service-icon-2.png
-            |-- service-icon-3.png
-            |-- service-icon-4.png
-            |-- service-image.png
-            |-- thum1.png
-            |-- thum1b.webp
-            |-- thum2.webp
-            |-- thum6.webp
-            |-- thumb3.webp
-            |-- thumb4.jpg
-            |-- thumb5.webp
-        |-- js
-            |-- script.js
-    |-- collection
-        |-- collection.html
-        |-- script.js
-        |-- style.css
-    |-- favicon.svg
-    |-- font-awesome-4.7.0
-        |-- css
-            |-- font-awesome.css
-            |-- font-awesome.min.css
-        |-- fonts
-            |-- fontawesome-webfont.eot
-            |-- fontawesome-webfont.svg
-            |-- fontawesome-webfont.ttf
-            |-- fontawesome-webfont.woff
-            |-- fontawesome-webfont.woff2
-            |-- FontAwesome.otf
-        |-- HELP-US-OUT.txt
-        |-- less
-            |-- animated.less
-            |-- bordered-pulled.less
-            |-- core.less
-            |-- fixed-width.less
-            |-- font-awesome.less
-            |-- icons.less
-            |-- larger.less
-            |-- list.less
-            |-- mixins.less
-            |-- path.less
-            |-- rotated-flipped.less
-            |-- screen-reader.less
-            |-- stacked.less
-            |-- variables.less
-        |-- scss
-            |-- font-awesome.scss
-            |-- _animated.scss
-            |-- _bordered-pulled.scss
-            |-- _core.scss
-            |-- _fixed-width.scss
-            |-- _icons.scss
-            |-- _larger.scss
-            |-- _list.scss
-            |-- _mixins.scss
-            |-- _path.scss
-            |-- _rotated-flipped.scss
-            |-- _screen-reader.scss
-            |-- _stacked.scss
-            |-- _variables.scss
-    |-- img
-        |-- about
-            |-- a0.jpg
-            |-- a1.jpg
-            |-- a2
-            |-- a2.jpg
-            |-- a3.jpg
-            |-- a4.png
-            |-- a5.jpg
-            |-- a6.jpg
-            |-- b9.jpg
-            |-- v1.mp4
-        |-- b1.png
-        |-- b10.png
-        |-- b11.jpg
-        |-- b12.jpg
-        |-- b13.jpg
-        |-- b14.png
-        |-- b15.png
-        |-- b16.jpg
-        |-- b2.jpg
-        |-- b3.jpg
-        |-- b4.jpg
-        |-- b5.png
-        |-- b6.png
-        |-- b7.png
-        |-- b8.png
-        |-- b9.jpg
-        |-- backpack_offer.jpg
-        |-- banner1.jpg
-        |-- beauty.webp
-        |-- bi.jpg
-        |-- blog
-            |-- b1.png
-            |-- b2.jpg
-            |-- b3.jpeg
-            |-- b4.jpeg
-            |-- b5.jpg
-            |-- b6.jpg
-            |-- b7.jpg
-            |-- b8.jpeg
-            |-- t5.jpg
-        |-- c.jpg
-        |-- contact
-            |-- 0.png
-            |-- 1.png
-            |-- 3.png
-        |-- electronics_offer.jpg
-        |-- electronics_offer1.jpg
-        |-- f1.jpeg
-        |-- f11.jpg
-        |-- f12.jpg
-        |-- flight_offer.jpg
-        |-- food.jpg
-        |-- icon.png
-        |-- logo.png
-        |-- logo1.png
-        |-- mother_gift.png
-        |-- offer.jpg
-        |-- payment.webp
-        |-- products
-            |-- 1.jpg
-            |-- 2.jpg
-            |-- 3.jpg
-            |-- 4.jpg
-        |-- shop1.jpg
-        |-- t1.png
-        |-- t11.jpg
-        |-- t2.webp
-        |-- t3.jpg
-        |-- t4.jpg
-        |-- t6.jpeg
-        |-- t7.jpg
-        |-- t8.webp
-        |-- t9.jpg
-    |-- index.html
-    |-- index.txt
-    |-- loging.html
-    |-- product
-        |-- A2401
-            |-- 4321085353-500x500.webp
-            |-- 4336463418.webp
-            |-- 5579629496-500x500.webp
-            |-- A2401.html
-    |-- product-page
-        |-- .gitignore
-        |-- cart.js
-        |-- design
-            |-- active-states-basket-empty.jpg
-            |-- active-states-basket-filled.jpg
-            |-- active-states-lightbox.jpg
-            |-- desktop-design-lightbox.jpg
-            |-- desktop-design.jpg
-            |-- desktop-preview.jpg
-            |-- mobile-design-basket-empty.jpg
-            |-- mobile-design-basket-filled.jpg
-            |-- mobile-design.jpg
-            |-- mobile-menu.jpg
-        |-- images
-            |-- favicon-32x32.png
-            |-- icon-cart.svg
-            |-- icon-close.svg
-            |-- icon-delete.svg
-            |-- icon-menu.svg
-            |-- icon-minus.svg
-            |-- icon-next.svg
-            |-- icon-plus.svg
-            |-- icon-previous.svg
-            |-- image-avatar.png
-            |-- image-product-1-thumbnail.jpg
-            |-- image-product-1.jpg
-            |-- image-product-2-thumbnail.jpg
-            |-- image-product-2.jpg
-            |-- image-product-3-thumbnail.jpg
-            |-- image-product-3.jpg
-            |-- image-product-4-thumbnail.jpg
-            |-- image-product-4.jpg
-            |-- logo.svg
-        |-- index.html
-        |-- main.css
-        |-- main.js
-        |-- README-template.md
-        |-- README.md
-        |-- slider.js
-        |-- style-guide.md
-    |-- script.js
-    |-- style-guide.md
-|-- music.html
 |-- project
     |-- project-assets
         |-- js
@@ -348,10 +120,3 @@
         |-- project-image
         |-- project.css
     |-- projectpage.html
-|-- spline.html
-|-- test
-    |-- css2.css
-    |-- index.html
-    |-- index2.html
-    |-- script.js
-    |-- style.css

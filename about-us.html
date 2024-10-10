@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Flexibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .section-text {
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li:before {
+            content: "•";
+            color: black;
+            padding-right: 10px;
+        }
+
+        .section img {
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .section-text-highlight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .blue-arrow {
+            width: 100px;
+            height: 100px;
+            background-color: #00aaff;
+            clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+            margin-bottom: 10px;
+        }
+
+        .yellow-bar {
+            width: 100px;
+            height: 10px;
+            background-color: #ffcc00;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-text, .section-text-highlight {
+                width: 100%;
+                text-align: center;
+            }
+
+            .section img {
+                width: 250px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            ul li {
+                font-size: 1em;
+            }
+
+            .blue-arrow {
+                margin: 0 auto 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            ul li {
+                font-size: 0.9em;
+            }
+
+            .section img {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            ul li {
+                font-size: 0.8em;
+            }
+
+            .section img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="section">
+        <div class="section-text">
+            <h1>It's not about where or when you work. It's about <span class="highlight">how you get it done.</span></h1>
+            <p>
+                In a flexibility-first world, great work can happen anywhere. That mindset has helped us fulfill the promise
+                of reliability, connection, and simplicity for tens of millions of people, and in turn, has helped us
+                become one of the world's largest SaaS companies.
+            </p>
+            <p>
+                Today, we're the trusted partner for companies of all sizes to connect, collaborate, secure their workforces,
+                and support employees and customers.
+            </p>
+            <ul>
+                <li>People, by letting them work securely from wherever they need to, keeping them happy, safe, and productive.</li>
+                <li>Businesses, by guaranteeing continuity in the face of disruptions, accelerating their ability to reduce costs.</li>
+                <li>Everyone, by delivering flexible tools built for navigating work and life easily.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/300" alt="Person working remotely">
+            <div class="yellow-bar"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div>
+            <div class="blue-arrow"></div>
+            <img src="https://via.placeholder.com/300" alt="Person with headphones working">
+        </div>
+        <div class="section-text-highlight">
+            <h2>The future of work is now.</h2>
+            <p>We're witnessing an evolution of the modern workforce, and the revolution of the modern workplace. GoTo is at the forefront, ready to help everyone take on all challenges, including:</p>
+            <ul>
+                <li>Facilitating flexible, hybrid and remote work policies</li>
+                <li>Providing seamless, on-demand support and assistance</li>
+                <li>Delivering powerful collaboration tools and cybersecurity products</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
