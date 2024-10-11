@@ -1,5 +1,4 @@
 |-- .gitattributes
-|-- 404.css
 |-- 404.html
 |-- about-us.html
 |-- ads.txt
@@ -24,6 +23,7 @@
     |-- images
         |-- 200w.gif
         |-- 4850064_29.svg
+        |-- 9814.jpg
         |-- discord-outline-svgrepo-com (1).svg
         |-- discord-outline-svgrepo-com (2).svg
         |-- discord-outline-svgrepo-com (3).svg
@@ -39,6 +39,7 @@
         |-- me3.jpg
         |-- New Project.png
         |-- pngtree-sound-waves-equalizer-audio-radio-signal-music-recording-vector-png-image_6678910.png
+        |-- project-banner1.png
         |-- square-flyer-template-maximalist-business_23-2148524497.avif
         |-- thumb.png
         |-- undraw_firmware_re_fgdy.svg
@@ -112,11 +113,17 @@
     |-- README.md
     |-- style-guide.md
 |-- creators-gallery.html
+|-- error
+    |-- 404.html
+    |-- style.scss
 |-- index.html
+|-- netlify.toml
 |-- project
     |-- project-assets
         |-- js
             |-- script.js
         |-- project-image
         |-- project.css
+    |-- project.html
     |-- projectpage.html
+    |-- test.html

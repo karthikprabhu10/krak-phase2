@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crio Projects Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Intro Section */
+  .intro-section {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .tagline {
+    color: #FFA500;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    color: #004d40;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .hashtag {
+    color: #757575;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    background-color: #FFA500;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .image img {
+    max-width: 400px;
+    height: auto;
+  }
+  
+  /* Submit Section */
+  .submit-section {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  .submit-content {
+    max-width: 50%;
+  }
+  
+  .submit-btn {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-image img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content, .submit-content {
+      max-width: 100%;
+    }
+  
+    .image img, .submit-image img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    .search-bar input {
+      padding: 8px;
+    }
+  
+    .search-bar button {
+      padding: 8px 12px;
+    }
+  }
+  
+</style>
+  <section class="intro-section">
+    <div class="container">
+      <div class="content">
+        <span class="tagline">Completely free • Community Driven</span>
+        <h1>Introducing Crio Projects Hub</h1>
+        <p>Find interesting mini projects for CSE and get started with an execution plan</p>
+        <p class="hashtag">#BuildWhatYouLove</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for projects...">
+          <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="your-image.png" alt="Crio Projects Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="submit-section">
+    <div class="container">
+      <div class="submit-content">
+        <h2>Submit your Projects</h2>
+        <p>Would you like to contribute your own projects to Crio Projects Hub? Share your project with us and we will work with you to feature it here.</p>
+        <button class="submit-btn">Submit Project</button>
+      </div>
+      <div class="submit-image">
+        <img src="your-image-2.png" alt="Submit Projects Image">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
