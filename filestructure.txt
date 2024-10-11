@@ -120,6 +120,10 @@
 |-- netlify.toml
 |-- project
     |-- project-assets
+        |-- images
+            |-- icons8-java.svg
+            |-- icons8-python.svg
+            |-- icons8-react-native.svg
         |-- js
             |-- script.js
         |-- project-image
