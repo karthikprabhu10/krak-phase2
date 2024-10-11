@@ -1,0 +1,123 @@
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    width: 100%; /* Let it stretch to fill the grid */
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card-body {
+    padding-top: 60px;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.app-category {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.detail p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.detail span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Updated button style - bold arrow without background */
+.arrow-button {
+    font-size: 2rem; /* Make the arrow larger and bold */
+    color: #333; /* Set a dark color for visibility */
+    background: none; /* No background */
+    border: none; /* Remove border */
+    cursor: pointer;
+    font-weight: bold; /* Make the arrow bold */
+    padding: 0; /* Remove padding */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for arrow */
+.arrow-button:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #00c853;
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.badge.free {
+    background-color: #00c853;
+}
+
+/* Responsive: 2 cards per row on smaller screens */
+@media screen and (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr); 
+       ;/* 2 cards per row */
+    }
+}
+
+/* Responsive: 1 card per row on very small screens */
+@media screen and (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); 
+       /* 1 card per row */
+        
+    }
+}
+.project-cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}

@@ -123,6 +123,7 @@
         |-- js
             |-- script.js
         |-- project-image
+        |-- project-main.css
         |-- project.css
     |-- project.html
     |-- projectpage.html
