@@ -5,7 +5,7 @@ const projectcardData = [
         title: "projectcard Title 1",
         description: "This is a brief description for projectcard 1. It summarizes the content and invites users to download.",
         projecttags: ["HTML", "CSS", "JavaScript"],
-        downloadLink: "https://example.com/project1-download"
+        downloadLink: "/project/projects/python/py1.html"
     },
     {
         image: "https://via.placeholder.com/320x180",
