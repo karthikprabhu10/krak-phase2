@@ -112,6 +112,11 @@
         |-- desktop.png
     |-- README.md
     |-- style-guide.md
+|-- components
+    |-- compnent.js
+    |-- footer.html
+    |-- navbar.html
+    |-- style.css
 |-- creators-gallery.html
 |-- error
     |-- 404.html
@@ -134,6 +139,7 @@
         |-- python
             |-- py1.html
     |-- python-project
+        |-- compnent.js
         |-- pythonprject.html
         |-- script.js
         |-- style.css

@@ -273,14 +273,7 @@
             transform: translateX(1.25rem);
         }
         
-        footer {
-            background-color: #FFFFFF;
-            border-top: 1px solid var(--gray-200);
-            padding: 1rem 0;
-            text-align: center;
-            color: var(--gray-500);
-            font-size: 0.75rem;
-        }
+
         
         @media (min-width: 640px) {
             .hero img {
