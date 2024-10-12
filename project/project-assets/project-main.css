@@ -261,3 +261,134 @@
     .logo-text{
         padding-top: 20px;
     }
+
+
+/* 
+
+    .recommendations-list {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+}
+
+.recommendation-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.recommendation-item:hover {
+    background-color: #f0f0f0;
+} */
+
+
+.recommendations-list {
+    border: none;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f9f9f9; /* iOS light gray background */
+    position: absolute;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 15px; /* Softer, rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    padding: 10px;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px; /* Round corners for items */
+    font-size: 1rem;
+    color: #333;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-bottom: 10px; /* Space between items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light iOS-style shadow */
+}
+
+.recommendation-item img.language-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%; /* Circular icons */
+}
+
+.recommendation-item:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px); /* Subtle slide effect on hover */
+}
+
+.recommendation-item:last-child {
+    margin-bottom: 0; /* No margin for the last item */
+}
+
+/* Smooth scroll for overflow */
+.recommendations-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.recommendations-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.recommendations-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Add some styling for input */
+.search-container input {
+    border: 2px solid #e0e0e0;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+
+.search-container input:focus {
+    border-color: #007aff; /* iOS-style blue border */
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2); /* iOS-style blue glow */
+}
+#search-recommendations {
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove border if it's causing extra space */
+    
+    z-index: 10;
+}
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    fill: #333;
+}
+#search-recommendations {
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* For webkit browsers (Chrome, Safari) */
+#search-recommendations::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+/* For Firefox */
+#search-recommendations {
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+}

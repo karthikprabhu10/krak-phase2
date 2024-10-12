@@ -130,5 +130,11 @@
         |-- project-main.css
         |-- project.css
     |-- project.html
-    |-- projectpage.html
+    |-- projects
+        |-- python
+            |-- py1.html
+    |-- python-project
+        |-- pythonprject.html
+        |-- script.js
+        |-- style.css
     |-- test.html

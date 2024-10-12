@@ -1,0 +1,119 @@
+
+.project {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.projectcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.projectcard-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default for mobile */
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .projectcard-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 projectcards per row for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .projectcard-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 projectcards per row for PCs */
+    }
+}
+
+.projectcard {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.projectcard:hover {
+    transform: scale(1.05);
+}
+
+.projectcard-image {
+    height: 0;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+}
+
+.projectcard-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectcard-content {
+    padding: 1rem;
+}
+
+.projectcard-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.projectcard-description {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projectcard-projecttags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.projecttag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    background-color: #10b981;
+    color: #fff;
+}
+
+.projectcard-footer {
+    padding: 1rem;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f9f9f9;
+}
+
+.projectbtn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #10b981;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.projectbtn:hover {
+    background-color: #059669;
+}
+
