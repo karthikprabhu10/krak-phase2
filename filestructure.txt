@@ -139,7 +139,6 @@
         |-- python
             |-- py1.html
     |-- python-project
-        |-- compnent.js
         |-- pythonprject.html
         |-- script.js
         |-- style.css
