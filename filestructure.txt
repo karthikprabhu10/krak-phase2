@@ -51,6 +51,7 @@
         |-- valorant (1).webp
         |-- valorant (2).webp
         |-- web-development-web.gif
+        |-- WhatsApp Image 2024-10-14 at 15.19.12_0d4d99bf.jpg
     |-- JS
         |-- script.js
 |-- blog
@@ -121,7 +122,56 @@
 |-- error
     |-- 404.html
     |-- style.scss
+|-- Google-Gemini-Thread-Animation-main
+    |-- Google-Gemini-Thread-Animation-main
+        |-- .eslintrc.cjs
+        |-- .gitignore
+        |-- image.png
+        |-- index.html
+        |-- LICENSE.txt
+        |-- package-lock.json
+        |-- package.json
+        |-- postcss.config.js
+        |-- public
+            |-- favicon.svg
+        |-- README.md
+        |-- src
+            |-- App.jsx
+            |-- assets
+                |-- madebypranay.svg
+                |-- StartBuilding_001.json
+                |-- StartBuilding_001_BG.png
+            |-- components
+                |-- ThreadAnimation.jsx
+            |-- index.css
+            |-- main.jsx
+        |-- tailwind.config.js
+        |-- vite.config.js
 |-- index.html
+|-- krak-ai
+    |-- .eslintrc.cjs
+    |-- .gitignore
+    |-- image.png
+    |-- index.html
+    |-- LICENSE.txt
+    |-- package-lock.json
+    |-- package.json
+    |-- postcss.config.js
+    |-- public
+        |-- favicon.svg
+    |-- README.md
+    |-- src
+        |-- App.jsx
+        |-- assets
+            |-- madebypranay.svg
+            |-- StartBuilding_001.json
+            |-- StartBuilding_001_BG.png
+        |-- components
+            |-- ThreadAnimation.jsx
+        |-- index.css
+        |-- main.jsx
+    |-- tailwind.config.js
+    |-- vite.config.js
 |-- netlify.toml
 |-- project
     |-- project-assets

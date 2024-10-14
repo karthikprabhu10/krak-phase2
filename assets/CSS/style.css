@@ -441,12 +441,14 @@
   .upskill-btnn {
     display: inline-flex;
     align-items: center;
-    background-color: #005249;
+    /* background-color: #9000ff; */
+    background-image: linear-gradient(to right, #4b16a0 0%, #5e2eab 51%, #723cc8 100%);
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   
   
