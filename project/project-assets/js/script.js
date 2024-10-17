@@ -11,11 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // JSON array containing the projectcard data
 const projectcardData = [
-    { image: "https://via.placeholder.com/320x180", title: "Project Title 1", description: "Description for project 1", projecttags: ["HTML", "CSS", "JavaScript"], page: "projectpage1.html" },
+    { image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de306b0e-e296-4d99-a1df-8a50cb8aea8a/dgw04zc-20401851-08fc-4fd3-9354-85bc33532c18.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlMzA2YjBlLWUyOTYtNGQ5OS1hMWRmLThhNTBjYjhhZWE4YVwvZGd3MDR6Yy0yMDQwMTg1MS0wOGZjLTRmZDMtOTM1NC04NWJjMzM1MzJjMTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5IB-TA1AinDGQ2jq4lXXYn7gB8-39MShGXFY_eLBQh8", title: "AI image captioning", description: "This is a Streamlit-based web application that uses a BLIP (Bootstrapped Language-Image Pre-training) model for generating captions based on user-uploaded images. The app allows users to upload images in JPG, JPEG, or PNG formats, and it provides an AI-generated caption for the uploaded image.", projecttags: ["Python", "BLIP", "Streamlit"], page: "projectpage1.html" },
+
+
+
     { image: "https://via.placeholder.com/320x180", title: "Project Title 2", description: "Description for project 2", projecttags: ["React", "Node.js", "MongoDB"], page: "projectpage2.html" },
+
+
+
     { image: "https://via.placeholder.com/320x180", title: "Project Title 3", description: "Description for project 3", projecttags: ["Python", "Django", "REST API"], page: "pythonproject1.html" },
+
+
+
     { image: "https://via.placeholder.com/320x180", title: "Project Title 4", description: "Description for project 4", projecttags: ["Flutter", "Dart", "iOS"], page: "flutterproject1.html" },
+
+
+
     { image: "https://via.placeholder.com/320x180", title: "Project Title 5", description: "Description for project 5", projecttags: ["Vue", "Nuxt", "Firebase"], page: "vueproject1.html" }
+
+
+    
 ];
 
 // Function to filter projectcards based on search query
