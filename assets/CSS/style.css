@@ -535,6 +535,9 @@
   
   .btnn-primary {
     background-color: #00ff66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
