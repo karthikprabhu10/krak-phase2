@@ -157,6 +157,8 @@
             |-- icons8-java.svg
             |-- icons8-python.svg
             |-- icons8-react-native.svg
+            |-- web1.png
+            |-- web2.png
         |-- js
             |-- script.js
         |-- project-image
@@ -166,9 +168,19 @@
     |-- projects
         |-- python
             |-- py1.html
+        |-- web
+            |-- web1.html
     |-- python-project
         |-- pythonprject.html
         |-- script.js
         |-- style.css
         |-- Untitled-1.fl
     |-- test.html
+    |-- WEB-PROJECTS
+        |-- script.js
+        |-- style.css
+        |-- thumbnail
+            |-- web1.png
+            |-- web2.png
+        |-- Untitled-1.fl
+        |-- webproject.html
